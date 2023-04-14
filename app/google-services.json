@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "714143859390",
+    "project_id": "aiester",
+    "storage_bucket": "aiester.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714143859390:android:e31cf48ad7adab6f1114ef",
+        "android_client_info": {
+          "package_name": "com.example.aiester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714143859390-khqclm73j6df4t4mg6io1t7crp2dnke5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClXQAIZa3Ce0_hC3aGEq2Ktto72-eZUq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714143859390-khqclm73j6df4t4mg6io1t7crp2dnke5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
