@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme.MaterialTheme"
+    tools:context=".Translator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/translator_tv"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_20sdp"
+        android:translationY="@dimen/_10sdp"
+        android:textColor="@color/purple_200"
+        />
+    <LinearLayout
+        android:id="@+id/linearone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:translationY="@dimen/_25sdp">
+
+        <Spinner
+            android:id="@+id/fromspinner"
+            android:layout_width="161dp"
+            android:layout_height="match_parent"
+            android:translationX="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            />
+
+        <ImageView
+            android:id="@+id/bidirectionalarrow"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:translationX="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_baseline_compare_arrows_24" />
+
+        <Spinner
+            android:id="@+id/tospinner"
+            android:layout_width="161dp"
+            android:layout_height="match_parent"
+            android:translationX="@dimen/_23sdp"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="397dp"
+        android:layout_height="@dimen/_100sdp"
+        android:hint="@string/source_text"
+        android:padding="5dp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textColorHint="@color/teal_700"
+        android:translationX="@dimen/_5sdp"
+        android:translationY="@dimen/_35sdp"
+        app:hintTextColor="@color/teal_700">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idedittext"
+            android:layout_width="382dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textImeMultiLine|textMultiLine"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:translationX="@dimen/_3sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/or"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:translationX="@dimen/_135sdp"
+        android:translationY="@dimen/_40sdp"
+        />
+
+    <ImageView
+        android:id="@+id/micimg"
+        android:layout_width="84dp"
+        android:layout_height="76dp"
+        android:translationX="@dimen/_125sdp"
+        android:translationY="@dimen/_45sdp"
+        app:srcCompat="@drawable/ic_baseline_mic_24" />
+
+    <TextView
+        android:layout_width="166dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/say_something"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:translationX="@dimen/_95sdp"
+        android:translationY="@dimen/_50sdp" />
+
+    <Button
+        android:id="@+id/translatebtn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/translate"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_14sdp"
+        android:translationX="@dimen/_80sdp"
+        android:translationY="@dimen/_55sdp" />
+
+    <TextView
+        android:id="@+id/translatedtextid"
+        android:layout_width="333dp"
+        android:layout_height="206dp"
+        android:hint="@string/translated_text"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:translationX="@dimen/_5sdp"
+        android:translationY="@dimen/_80sdp" />
+
+    <ImageView
+        android:id="@+id/translatedmicid"
+        android:layout_width="53dp"
+        android:layout_height="57dp"
+        android:translationX="@dimen/_265sdp"
+        android:translationY="-25dp"
+        app:srcCompat="@drawable/ic_baseline_mic_none_24" />
+</LinearLayout>
