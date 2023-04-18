@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@color/material_dynamic_neutral95"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/AppTheme.MaterialTheme"
@@ -37,8 +38,8 @@
 
         <ImageView
             android:id="@+id/bidirectionalarrow"
-            android:layout_width="55dp"
-            android:layout_height="match_parent"
+            android:layout_width="51dp"
+            android:layout_height="37dp"
             android:layout_gravity="center"
             android:translationX="@dimen/_15sdp"
             app:srcCompat="@drawable/ic_baseline_compare_arrows_24" />
@@ -59,7 +60,8 @@
         android:layout_height="@dimen/_100sdp"
         android:hint="@string/source_text"
         android:padding="5dp"
-        android:paddingRight="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
         android:textColorHint="@color/teal_700"
         android:translationX="@dimen/_5sdp"
         android:translationY="@dimen/_35sdp"
@@ -67,13 +69,13 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/idedittext"
-            android:layout_width="382dp"
+            android:layout_width="373dp"
             android:layout_height="match_parent"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textImeMultiLine|textMultiLine"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColorHint="#78909C"
             android:textSize="@dimen/_14sdp"
             android:translationX="@dimen/_3sdp" />
     </com.google.android.material.textfield.TextInputLayout>
