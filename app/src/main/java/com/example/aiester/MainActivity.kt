@@ -16,5 +16,12 @@ class MainActivity : AppCompatActivity() {
             val translatorintent = Intent(this,Translator::class.java)
             startActivity(translatorintent)
         }
+
+//        ImgtoTextEx activity will be open
+        val img2text = findViewById<Button>(R.id.Ima2text)
+        img2text.setOnClickListener {
+            val img2txtclass = Intent(this,ImgtoTextEx::class.java)
+            startActivity(img2txtclass)
+        }
     }
 }

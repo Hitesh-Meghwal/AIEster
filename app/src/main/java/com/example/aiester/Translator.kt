@@ -1,6 +1,8 @@
 package com.example.aiester
 
 import android.annotation.SuppressLint
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +11,7 @@ import android.speech.tts.TextToSpeech
 import android.text.Editable
 import android.view.View
 import android.widget.*
+import androidx.core.content.getSystemService
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.ml.common.modeldownload.FirebaseModelDownloadConditions
 import com.google.firebase.ml.naturallanguage.FirebaseNaturalLanguage
@@ -21,6 +24,7 @@ import java.util.Locale
 class Translator : AppCompatActivity() {
 
     lateinit var tts : TextToSpeech
+    lateinit var clipboardManager: ClipboardManager
     private val fromlanguages = arrayOf<String>("From","English","Afrikaans","Arabic","Belarusian","Bulgarian","Bengali","Catalan","Czech","Dutch","Danish","French","Greek","Gujarati","Italian","Indonesian","Hindi","Urdu","Marathi","Russian","Welsh","Tamil")
     private val tolanguages = arrayOf<String>("To","English","Afrikaans","Arabic","Belarusian","Bulgarian","Bengali","Catalan","Czech","Dutch","Danish","French","Greek","Gujarati","Italian","Indonesian","Hindi","Urdu","Marathi","Russian","Welsh","Tamil")
 
@@ -109,6 +113,23 @@ class Translator : AppCompatActivity() {
                     tts.speak(translatedtv.text.toString(),TextToSpeech.QUEUE_ADD,null)
                 }
             })
+        }
+
+//        clip board service used for copy and paste
+        clipboardManager = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
+        translatedtv.setOnClickListener{
+            clipboardManager.setPrimaryClip(ClipData.newPlainText("Language",translatedtv.text.toString()))
+            Toast.makeText(this, "Text Copied", Toast.LENGTH_SHORT).show()
+        }
+
+//      switch between language just by using bidirectional arrow
+        val switcharrow = findViewById<ImageView>(R.id.bidirectionalarrow)
+        switcharrow.setOnClickListener{
+            var fromlanguageindex = fromspinner.selectedItemPosition   //Int
+            var tolanguageindex = tospinner.selectedItemPosition       //Int
+
+            fromspinner.setSelection(tolanguageindex)
+            tospinner.setSelection(fromlanguageindex)
         }
 
     }
