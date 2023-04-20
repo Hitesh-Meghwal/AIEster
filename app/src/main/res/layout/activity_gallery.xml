@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Capture">
+
+    <ImageView
+        android:id="@+id/captureiv"
+        android:layout_width="331dp"
+        android:layout_height="289dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:src="@drawable/scanner"
+        android:contentDescription="@string/detecttext" />
+
+    <Button
+        android:id="@+id/opengal"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captureiv"
+        android:background="@drawable/button_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:text="@string/open"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="false"
+        app:backgroundTint="#FFFF00" />
+
+
+    <Button
+        android:id="@+id/detecttext"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opengal"
+        android:background="@drawable/button_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:text="@string/detect_text"
+        android:textSize="@dimen/_15sdp"
+        android:textAllCaps="false"
+        app:backgroundTint="#FFFF00" />
+
+    <TextView
+        android:id="@+id/resultedtext"
+        android:layout_width="387dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/detecttext"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center|top"
+        android:hint="@string/your_detected_text_will_be_display_here"
+        android:maxLines="4"
+        android:scrollbars="vertical|horizontal"
+        android:textColor="@color/black"
+        android:textColorHint="#757575" />
+
+</RelativeLayout>

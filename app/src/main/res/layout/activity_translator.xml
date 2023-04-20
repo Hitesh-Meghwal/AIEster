@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@color/material_dynamic_neutral95"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/AppTheme.MaterialTheme"
@@ -31,10 +30,10 @@
             android:id="@+id/fromspinner"
             android:layout_width="161dp"
             android:layout_height="match_parent"
-            android:translationX="@dimen/_5sdp"
+            android:contentDescription="@string/from"
             android:gravity="center"
             android:padding="@dimen/_2sdp"
-            />
+            android:translationX="@dimen/_5sdp" />
 
         <ImageView
             android:id="@+id/bidirectionalarrow"
@@ -48,10 +47,10 @@
             android:id="@+id/tospinner"
             android:layout_width="161dp"
             android:layout_height="match_parent"
-            android:translationX="@dimen/_23sdp"
+            android:contentDescription="@string/to"
             android:gravity="center"
             android:padding="@dimen/_2sdp"
-            />
+            android:translationX="@dimen/_23sdp" />
     </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -75,9 +74,10 @@
             android:importantForAutofill="no"
             android:inputType="textImeMultiLine|textMultiLine"
             android:textColor="@color/black"
-            android:textColorHint="#78909C"
+            android:textColorHint="#757575"
             android:textSize="@dimen/_14sdp"
-            android:translationX="@dimen/_3sdp" />
+            android:translationX="@dimen/_3sdp"
+            tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -124,7 +124,7 @@
     <TextView
         android:id="@+id/translatedtextid"
         android:layout_width="333dp"
-        android:layout_height="206dp"
+        android:layout_height="166dp"
         android:hint="@string/translated_text"
         android:textAllCaps="false"
         android:textColor="@color/black"

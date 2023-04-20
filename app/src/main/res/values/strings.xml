@@ -19,4 +19,14 @@
     <string name="say_something">Say Something</string>
     <string name="translate">Translate</string>
     <string name="translated_text">Translated Text</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="capture_img">Capture Image</string>
+    <string name="gallery">Gallery</string>
+    <string name="imgtotext">ImgtoText</string>
+    <string name="snap">Snap</string>
+    <string name="detect_text">Detect Text</string>
+    <string name="detecttext">Detecttext</string>
+    <string name="your_detected_text_will_be_display_here">Your detected text will be display here!</string>
+    <string name="open">Open</string>
 </resources>

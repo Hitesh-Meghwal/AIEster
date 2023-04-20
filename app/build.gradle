@@ -47,12 +47,13 @@ dependencies {
     implementation 'com.google.firebase:firebase-ml-natural-language:22.0.1'
     implementation 'com.google.firebase:firebase-ml-natural-language-language-id-model:20.0.8'
     implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.9'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:18.0.2'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0'
     implementation 'com.airbnb.android:lottie:6.0.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0'
 
 }

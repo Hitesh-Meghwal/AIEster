@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ImgtoTextEx">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="160dp"
+        android:layout_height="196dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img"
+        android:layout_marginStart="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:contentDescription="@string/imgtotext" />
+
+    <Button
+        android:id="@+id/Captureimg"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/imgview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_90sdp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="@dimen/_90sdp"
+        android:layout_marginBottom="@dimen/_90sdp"
+        android:background="@drawable/button_bg"
+        android:text="@string/capture_img"
+        android:textSize="@dimen/_11sdp"
+        android:textAllCaps="false"
+        app:backgroundTint="#FFFF00"
+        app:icon="@drawable/ic_baseline_camera_24" />
+
+    <Button
+        android:id="@+id/gallery"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="187dp"
+        android:layout_height="59dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_360sdp"
+        android:background="@drawable/button_bg"
+        android:text="@string/gallery"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12sdp"
+        app:backgroundTint="#FFFF00"
+        app:icon="@drawable/ic_baseline_image_24" />
+
+</RelativeLayout>

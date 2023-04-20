@@ -17,6 +17,7 @@ import com.google.firebase.ml.common.modeldownload.FirebaseModelDownloadConditio
 import com.google.firebase.ml.naturallanguage.FirebaseNaturalLanguage
 import com.google.firebase.ml.naturallanguage.translate.FirebaseTranslateLanguage
 import com.google.firebase.ml.naturallanguage.translate.FirebaseTranslatorOptions
+import org.w3c.dom.Text
 import java.util.Locale
 
 
@@ -25,6 +26,15 @@ class Translator : AppCompatActivity() {
 
     lateinit var tts : TextToSpeech
     lateinit var clipboardManager: ClipboardManager
+    lateinit var fromspinner : Spinner
+    lateinit var tospinner : Spinner
+    lateinit var switcharrow : ImageView
+    lateinit var sourcetext : TextInputEditText
+    lateinit var mic : ImageView
+    lateinit var translatebtn : Button
+    lateinit var translatedtv : TextView
+    lateinit var translatedmic : ImageView
+
     private val fromlanguages = arrayOf<String>("From","English","Afrikaans","Arabic","Belarusian","Bulgarian","Bengali","Catalan","Czech","Dutch","Danish","French","Greek","Gujarati","Italian","Indonesian","Hindi","Urdu","Marathi","Russian","Welsh","Tamil")
     private val tolanguages = arrayOf<String>("To","English","Afrikaans","Arabic","Belarusian","Bulgarian","Bengali","Catalan","Czech","Dutch","Danish","French","Greek","Gujarati","Italian","Indonesian","Hindi","Urdu","Marathi","Russian","Welsh","Tamil")
 
@@ -35,13 +45,14 @@ class Translator : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_translator)
-        val fromspinner = findViewById<Spinner>(R.id.fromspinner)
-        val tospinner = findViewById<Spinner>(R.id.tospinner)
-        val sourcetext = findViewById<TextInputEditText>(R.id.idedittext)
-        val mic = findViewById<ImageView>(R.id.micimg)
-        val translatebtn = findViewById<Button>(R.id.translatebtn)
-        val translatedtv = findViewById<TextView>(R.id.translatedtextid)
-        val translatedmic = findViewById<ImageView>(R.id.translatedmicid)
+        fromspinner = findViewById(R.id.fromspinner)
+        tospinner = findViewById(R.id.tospinner)
+        switcharrow = findViewById(R.id.bidirectionalarrow)
+        sourcetext = findViewById(R.id.idedittext)
+        mic = findViewById(R.id.micimg)
+        translatebtn = findViewById(R.id.translatebtn)
+        translatedtv = findViewById(R.id.translatedtextid)
+        translatedmic = findViewById(R.id.translatedmicid)
 
 //        fromspinner
         val fromadapterView =
@@ -64,8 +75,7 @@ class Translator : AppCompatActivity() {
         }
 
 //        tospinner
-        val toadapterView =
-            ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, tolanguages)
+        val toadapterView = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, tolanguages)
         tospinner.adapter = toadapterView
         tospinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
@@ -123,10 +133,9 @@ class Translator : AppCompatActivity() {
         }
 
 //      switch between language just by using bidirectional arrow
-        val switcharrow = findViewById<ImageView>(R.id.bidirectionalarrow)
         switcharrow.setOnClickListener{
-            var fromlanguageindex = fromspinner.selectedItemPosition   //Int
-            var tolanguageindex = tospinner.selectedItemPosition       //Int
+            var fromlanguageindex = fromspinner.selectedItemPosition
+            var tolanguageindex = tospinner.selectedItemPosition
 
             fromspinner.setSelection(tolanguageindex)
             tospinner.setSelection(fromlanguageindex)
