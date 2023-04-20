@@ -54,6 +54,7 @@
         android:gravity="center|top"
         android:hint="@string/your_detected_text_will_be_display_here"
         android:maxLines="4"
+        android:textSize="@dimen/_12sdp"
         android:scrollbars="vertical|horizontal"
         android:textColor="@color/black"
         android:textColorHint="#757575" />

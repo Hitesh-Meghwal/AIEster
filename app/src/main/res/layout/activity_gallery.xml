@@ -57,6 +57,7 @@
         android:maxLines="4"
         android:scrollbars="vertical|horizontal"
         android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
         android:textColorHint="#757575" />
 
 </RelativeLayout>
