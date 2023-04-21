@@ -19,6 +19,7 @@ import com.google.mlkit.vision.text.Text
 import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
 
+
 @Suppress("DEPRECATION")
 class Gallery : AppCompatActivity() {
     lateinit var captureiv : ImageView

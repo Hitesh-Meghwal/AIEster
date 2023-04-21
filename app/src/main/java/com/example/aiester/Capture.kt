@@ -62,6 +62,7 @@ class Capture : AppCompatActivity() {
             clipboardManager.setPrimaryClip(ClipData.newPlainText("Text",detectedtv.text.toString()))
             Toast.makeText(this, "Text Copied", Toast.LENGTH_SHORT).show()
         }
+
     }
 
     private fun checkpermission() : Boolean{
