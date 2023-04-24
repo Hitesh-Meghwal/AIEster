@@ -23,12 +23,5 @@ class MainActivity : AppCompatActivity() {
             val img2txtclass = Intent(this,ImgtoTextEx::class.java)
             startActivity(img2txtclass)
         }
-
-//        Imagegenerator activity will be open
-        val imggenerator = findViewById<Button>(R.id.imggenerator)
-        imggenerator.setOnClickListener {
-            val imggeneratorclass = Intent(this,Imagegenerator::class.java)
-            startActivity(imggeneratorclass)
-        }
     }
 }
