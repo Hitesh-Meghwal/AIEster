@@ -29,4 +29,8 @@
     <string name="detecttext">Detecttext</string>
     <string name="your_detected_text_will_be_display_here">Your detected text will be display here!</string>
     <string name="open">Open</string>
+    <string name="generate_image">Generate Image</string>
+    <string name="enter_text_to_generate_image">Enter text to generate image!!</string>
+    <string name="generate">Generate</string>
+    <string name="generatedimg">GeneratedImg</string>
 </resources>
