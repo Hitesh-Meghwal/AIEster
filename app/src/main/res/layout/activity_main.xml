@@ -13,7 +13,7 @@
         android:layout_width="@dimen/_180sdp"
         android:layout_height="@dimen/_41sdp"
         android:layout_marginStart="88dp"
-        android:layout_marginTop="194dp"
+        android:layout_marginTop="276dp"
         android:layout_marginEnd="89dp"
         android:gravity="center"
         android:text="@string/translator"
@@ -21,6 +21,7 @@
         android:textSize="@dimen/_13ssp"
         app:icon="@drawable/ic_baseline_translate_24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,40 +41,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/translator" />
-
-<!--    <Button-->
-<!--        android:id="@+id/chatgpt"-->
-<!--        style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
-<!--        android:layout_width="@dimen/_180sdp"-->
-<!--        android:layout_height="@dimen/_41sdp"-->
-<!--        android:layout_marginStart="88dp"-->
-<!--        android:layout_marginTop="28dp"-->
-<!--        android:layout_marginEnd="89dp"-->
-<!--        android:text="@string/chatgpt"-->
-<!--        android:gravity="center"-->
-<!--        android:textAllCaps="true"-->
-<!--        android:textSize="@dimen/_13ssp"-->
-<!--        app:icon="@drawable/ic_baseline_chat_24"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/Ima2text" />-->
-
-    <Button
-        android:id="@+id/imggenerator"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="@dimen/_180sdp"
-        android:layout_height="@dimen/_41sdp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="89dp"
-        android:gravity="center"
-        android:text="@string/image_generator"
-        android:textAllCaps="true"
-        android:textSize="@dimen/_13ssp"
-        app:icon="@drawable/ic_baseline_image_search_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ima2text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
