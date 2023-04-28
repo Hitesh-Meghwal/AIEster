@@ -3,5 +3,5 @@ This application includes features such as "Translation" and "Text Extraction fr
 The second feature of this app is the ability to extract text from images. 
 
 <img src="https://user-images.githubusercontent.com/129782600/234064669-faacaf51-1d3a-40b7-81f9-0b8b0369d62a.png" width=500 height=900>
-<img src="https://user-images.githubusercontent.com/129782600/234064988-a7e1d005-a70c-42a1-9453-a9cb7cf9e63c.png" width=300 height=900>
-<img src="https://user-images.githubusercontent.com/129782600/234065028-e3428d3a-6aff-4b76-960f-79d7ee23831a.png" width=600 height=900>
+<img src="https://user-images.githubusercontent.com/129782600/234064988-a7e1d005-a70c-42a1-9453-a9cb7cf9e63c.png" width=500 height=900>
+<img src="https://user-images.githubusercontent.com/129782600/234065028-e3428d3a-6aff-4b76-960f-79d7ee23831a.png" width=500 height=900>
